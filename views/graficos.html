@@ -1,0 +1,63 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projeto Ora, Bolas!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href='../CSS/css.css' />
+    
+</head>
+<body>
+        <div class='father'>
+            <div class="box2">
+                <div class="container"> 
+                    <!--    <li><a href="main.html"> INICIO</a></li>                     -->
+                        <li onclick="grafico1()">GRAFICO 1</li>
+                        <li onclick="grafico2()">GRAFICO 2</li>
+                        <li onclick="grafico3()">GRAFICO 3</li>
+                        <li onclick="grafico4()">GRAFICO 4</li>
+                        <li onclick="grafico5()">GRAFICO 5</li>
+                        <li onclick="trajBola()"> TRAJ. BOLA</li>
+                        <li onclick="info()"> INFORMAÇÕES</li>
+                </div>
+
+                <hr>
+                <div class="containerbox">
+                   
+                    <div class="left"> 
+                        <img src="../imagens/robo2.png" width="230" height="250"    >
+                        <hr> 
+                        <div class="novo">
+                                x<sub>0</sub> 
+                                <input type="text" size="15" id="x" maxlength="50"/>
+                                <br>
+        
+                                y<sub>0</sub>
+                                <input type="text" size="15" id="y" maxlength="50"/>
+                        </div>
+                        <div class="botoes">
+                            <br>
+                            <li onclick="distancia0(), andaRobo(),  grafico1()"> Testar </li>
+                            <br> 
+                            <li onclick="recarrega()"> Apagar Gráfico </li> 
+                        </div>
+                        <br>
+                        <hr>
+                        <div class="caixa" id="info">
+                            
+                        </div>
+                        
+                    </div>
+                    <div id="myChart" class="chart">           </div>
+                
+                </div>
+            
+            </div>
+        </div>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="../JS/script.js" type="text/javascript"></script>
+</body>
+
+</html>
